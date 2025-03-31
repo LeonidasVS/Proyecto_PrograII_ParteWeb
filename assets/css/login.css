@@ -1,0 +1,70 @@
+body {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    #38547b 0%,
+    #295ca4 20%,
+    #4da3d8 40%,
+    #457b9d 60%,
+    #244169 80%
+  );
+
+  background-size: 200% 200%;
+  animation: movimiento 7s linear infinite alternate;
+}
+
+@keyframes movimiento {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+h2 {
+  color: #ff6f20;
+}
+
+.btn-logear {
+  background-color: #ff6f20;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 3px;
+  transition: transform 0.3s ease;
+}
+.btn-logear:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.login-container {
+  max-width: 900px;
+}
+.form-control {
+  border-radius: 7px;
+  border: 1.5px solid #c0bfbf;
+}
+
+.login-box,
+.login-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  min-height: 525px; /* Ajusta la altura mínima */
+}
+
+a {
+  margin-top: 10px;
+  text-decoration: none;
+}
+.login-image {
+  background: url("https://static.vecteezy.com/system/resources/previews/004/439/485/non_2x/store-cartoon-illustration-free-vector.jpg")
+    no-repeat center center;
+  background-size: cover;
+}
